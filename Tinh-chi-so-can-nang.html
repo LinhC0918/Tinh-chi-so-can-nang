@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chi so can nang</title>
+</head>
+<body>
+    <script>
+        var height = parseFloat(prompt("Enter the height(m)"));
+        var weight = parseFloat(prompt("Enter the weight(kg)"));
+        var BMI = weight / (height * height);
+        const isLessThan18 = BMI < 18.5;
+        const isLessThan25 = BMI < 25;
+        const isLessThan30 = BMI < 30;
+        if (isLessThan18)
+            document.write('Underweight');
+        else if (isLessThan25)
+            document.write('Normal');
+        else if (isLessThan30)
+            document.write('Overweight');
+        else
+            document.write('Obese');
+    </script>
+</body>
+</html>
